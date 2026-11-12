@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="my">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>မင်းအတွက် စာလေးတစ်စောင် 💗</title>
+<style>
+  *{box-sizing:border-box}
+  body{
+    margin:0; min-height:100vh; display:grid; place-items:center; padding:24px;
+    font-family:"Noto Sans Myanmar","Myanmar Text",system-ui,sans-serif;
+    color:#66384b; overflow:hidden;
+    background:radial-gradient(circle at 15% 15%,#fff7fb 0 12%,transparent 35%),
+               linear-gradient(145deg,#ffe3ef,#f9e8ff 55%,#e6f2ff);
+  }
+  .card{
+    width:min(100%,430px); text-align:center; padding:34px 25px 30px;
+    border:1px solid #ffffffb8; border-radius:28px;
+    background:#ffffffd9; box-shadow:0 18px 55px #9d668c26;
+    position:relative; z-index:2;
+  }
+  .heart{font-size:42px; animation:pulse 1.5s infinite}
+  h1{font-size:25px; margin:12px 0 18px; color:#b34f7b}
+  p{font-size:16px; line-height:2; margin:12px 0}
+  button{
+    margin-top:18px; border:0; border-radius:999px; padding:13px 24px;
+    color:white; background:linear-gradient(100deg,#ed78a7,#b77be8);
+    font:inherit; font-size:15px; box-shadow:0 7px 18px #d47ca344;
+  }
+  #note{display:none; margin-top:20px; padding:16px; border-radius:18px; background:#fff2f7}
+  .small{font-size:13px;color:#a47b8c;margin-top:22px}
+  .float{position:fixed; bottom:-40px; opacity:.55; animation:rise 8s linear infinite; z-index:1}
+  .float:nth-child(2){left:12%;animation-delay:1s}.float:nth-child(3){left:78%;animation-delay:3s}
+  .float:nth-child(4){left:48%;animation-delay:5s}
+  @keyframes pulse{50%{transform:scale(1.15)}}
+  @keyframes rise{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+</style>
+</head>
+<body>
+<div class="float">💗</div><div class="float">💕</div><div class="float">💖</div>
+<main class="card">
+  <div class="heart">💌</div>
+  <h1>မင်းအတွက် စာလေးတစ်စောင်</h1>
+  <p>ဒီစာလေးကို ဖတ်နေတဲ့သူရေ…</p>
+  <p>မင်းရဲ့နေ့ရက်တိုင်းမှာ ပျော်ရွှင်မှုလေးတွေ ရှိနေပါစေ။</p>
+  <p>ပင်ပန်းတဲ့အချိန်တွေမှာလည်း ကိုယ့်ကိုယ်ကို ဂရုစိုက်ဖို့ မမေ့နဲ့နော်။ 🌷</p>
+  <button onclick="document.getElementById('note').style.display='block';this.textContent='စာလေး ဖတ်ပြီးပြီ 💗'">နောက်ထပ်စာလေး ဖတ်မယ်</button>
+  <div id="note">
+    <p>မင်းဟာ တန်ဖိုးရှိတဲ့သူတစ်ယောက်ပါ။</p>
+    <p>မင်းရဲ့အပြုံးလေးတွေ မပျောက်ကွယ်ပါစေနဲ့။</p>
+    <p>ဒီနေ့လည်း ကောင်းသောအရာလေးတွေ မင်းဆီ ရောက်လာပါစေ။ 💞</p>
+  </div>
+  <div class="small">ဒီစာလေးကို မင်းအတွက် ရည်ရွယ်ပြီး ဖန်တီးထားတာပါ ♡</div>
+</main>
+</body>
+</html>
